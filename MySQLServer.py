@@ -5,11 +5,12 @@ from mysql.connector import errorcode
 
 def create_database():
     try:
-        # Connect to MySQL Server (adjust credentials as needed)
+        # Connect to MySQL Server
         conn = mysql.connector.connect(
             host="localhost",
+            port=3308,
             user="root",
-            password="Emcee24."  # Replace with your MySQL root password
+            password="Emcee24."
         )
 
         cursor = conn.cursor()
